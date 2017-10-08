@@ -1,0 +1,68 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 16px;
+    background: url('../images/kids-clothing.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+}
+
+h1 {
+    margin: 0 0 10px;
+    font-size: 2.4em;
+    font-weight: 300;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 0 0 10px;
+    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 1.8em;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.pastel {
+    width: 320px;
+    margin: 315px auto 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pastel img {
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width : 768px) and (orientation: portrait) {
+    .pastel {
+        margin-top: 42%
+    }
+}
+
+@media only screen and (max-width : 768px) and (orientation: landscape) {
+    .pastel {
+        width: 50%;
+        margin-top: 12%;
+    }
+    .pastel img {
+        width: 40%;
+        margin: 0 auto 20px;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    .pastel {
+        width: 80%
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+}
